@@ -10,7 +10,7 @@
      msg: "I am learning {{COURSE}} and the duration is: {{DURATION}} and trainer is: {{TRAINER}}"
 
   - name: variables printing again
-    vars:
+    vars:     # task level variables and override
      COURSE: "ANSIBLE"
     ansible.builtin.debug:
      msg: "I am learning {{COURSE}} and the duration is: {{DURATION}} and trainer is: {{TRAINER}}"
