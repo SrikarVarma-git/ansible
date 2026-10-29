@@ -2,5 +2,5 @@
   hosts: varma
   tasks:
   - name: vars from arguments
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "Hello {{NAME}}, Good {{GREETING}}"
