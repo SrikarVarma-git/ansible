@@ -1,0 +1,6 @@
+- name: play 01
+  hosts: varma
+  tasks:
+  - name: play 01
+    ansible.builtin.debug:
+     msg: "this is play 01 nad task 01"
