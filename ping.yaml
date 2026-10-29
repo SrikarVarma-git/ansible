@@ -1,5 +1,5 @@
 - name: ping the server
   hosts: varma
-  tasks:
-  - name: ping the server
-    ansible.builtin.ping:
+  tasks: 
+   - name: ping the server
+     ansible.builtin.ping:
