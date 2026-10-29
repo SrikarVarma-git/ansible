@@ -4,6 +4,6 @@
   - vars.yaml
   tasks:
   - name: passing variables from a file
-    ansible.builtin.debug
+    ansible.builtin.debug:
      msg: "I am learning {{COURSE}} and the duration is: {{DURATION}} and the trainer is: {{TRAINER}}"
   
