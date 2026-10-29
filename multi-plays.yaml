@@ -3,4 +3,11 @@
   tasks:
   - name: play 01
     ansible.builtin.debug:
-     msg: "this is play 01 nad task 01"
+     msg: "this is play 01 and task 01"
+
+- name: play 02
+  hosts: varma
+  tasks:
+   - name: play 02
+     ansible.builtin.debug:
+      msg: "this is play 02 and task 02"
