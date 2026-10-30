@@ -1,5 +1,6 @@
 - name: datatypes ansible
   hosts: local
+  connection: yes
   vars:
    course: "DevOps with AWS"  #string
    duration: "100"    # int, float
