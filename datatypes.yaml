@@ -1,0 +1,26 @@
+- name: datatypes ansible
+  hosts: local
+  vars:
+   course: "DevOps with AWS"  #string
+   duration: "100"    # int, float
+   topics:  #list
+   - Linux
+   - git 
+   - shell
+   - ansible
+   - terraform
+   - docker
+   - kubernetes
+   - jenkins
+   - monitoring
+   - python script
+   live: true   # boolean
+   tools:           # map
+     container: docker
+     ci: jenkins
+     cloud: aws/azure
+  tasks:
+  - name: print the datatypes in ansible using variables
+    ansible.builtin.debug:
+     msg: "I am learning {{course}} with duration of {{duration}}, and topics are {{topics}}, and live is {{live}}, and tools are {{tools}}"
+
