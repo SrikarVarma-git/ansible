@@ -1,0 +1,14 @@
+- name: install tools
+  hosts: varma
+  become: yes
+  tasks:
+  - name: install through loops
+    ansible.builtin.package:
+     name: "{{item}}"
+     state: present 
+    loop:
+    - nginx
+    - postfix
+    - httpd
+    - mysql
+  
