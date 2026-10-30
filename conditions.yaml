@@ -1,10 +1,10 @@
 - name: conditions in ansible, print number 50 is less than or not
   hosts: local
   connection: local
-  # vars_prompt:
-  # - name: number
-  #   prompt: please enter the number
-  #   private: false  #not confidential
+  vars_prompt:
+  - name: number
+    prompt: please enter the number
+    private: false  #not confidential
   vars:
    my_number: 23
   tasks:
