@@ -4,8 +4,8 @@
   tasks:
   - name: print the loops
     ansible.builtin.debug:
-     msg: "Hello {{item}}"
-    loops:
+     msg: "Hello {{ item }}"
+    loop:
     - Srikar
     - varma
     - tanu
