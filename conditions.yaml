@@ -6,14 +6,14 @@
   #   prompt: please enter the number
   #   private: false  #not confidential
   vars:
-   my-number: 23
+   my_number: 23
   tasks:
   - name: print the number if it is less than 50
     ansible.builtin.debug:
-     msg: "given number {{my-number}} is less than 50"
-    when: my-number | int < 50 
+     msg: "given number {{my_number}} is less than 50"
+    when: my_number | int < 50 
 
   - name: print the number if it greater or equal to 50
     ansible.builtin.debug:
-     msg: "given number is {{my-number}} is greater or equal to 50"
-    when: my-number | int >= 50
+     msg: "given number is {{my_number}} is greater or equal to 50"
+    when: my_number | int >= 50
