@@ -1,0 +1,7 @@
+- name: create user
+  hosts: varma
+  become: yes
+  tasks:
+  - name: check the user exists or not
+    ansible.builtin.command: id expense
+    register: USER    # it stores the otput of the previous command in the user variable
