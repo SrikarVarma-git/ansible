@@ -1,0 +1,9 @@
+- name: filters in ansible
+  hosts: local
+  connection: local
+  # vars:
+  #  course: "DevOps with AWS"
+  tasks:
+  - name: print the default variable
+    ansible.builtin.debug:
+     msg: " Hello {{ course  | default ('Ansible') }} "
