@@ -7,3 +7,16 @@
   - name: print the default variable
     ansible.builtin.debug:
      msg: " Hello {{ course  | default ('Ansible') }} "
+
+
+  - name: print the word in upper case
+    vars:
+     information: "Hello Srikar"
+    ansible.builtin.debug:
+     msg: "{{ information | upper }}"
+
+  - name: print the word in lower case
+    vars:
+     information: "Hello Srikar"
+    ansible.builtin.debug:
+     msg: "{{ information | lower }}"
