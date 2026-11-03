@@ -1,0 +1,6 @@
+- name: execute the modules use command and shell
+  hosts: local
+  connection: local
+  tasks:
+   - name: execute the command
+     ansible.builtin.command: ls -ltr
