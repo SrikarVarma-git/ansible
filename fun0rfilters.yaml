@@ -35,7 +35,7 @@
 
   - name: convert map to list
     vars:
-    course:
+     course:
       name: "DevOps with AWS"
       duration: 120
       trainer: "siva kumar reddy"
