@@ -3,8 +3,8 @@
   connection: local
   vars:
    subnet_id: subnet-05faecd742c5b55d9
-   sg_id: sg-0e77c0eb50c90d35b
-   AMI_ID: ami-0055977a6e828a4f4
+   sg_id: "sg-0e77c0eb50c90d35b"
+   AMI_ID: "ami-0055977a6e828a4f4"
    instances:
    - mysql
    - backend
@@ -14,7 +14,7 @@
   - name: create an ec2 instance
     amazon.aws.ec2_instance:
      name: "{{ item }}"
-     vpc_subnet_id: " {{ subnet_id }}"
+     vpc_subnet_id: "{{ subnet_id }}"
      instance_type: t3.micro
      security_group: "{{ sg_id }} "
      image_id: " {{ AMI_ID }}"
