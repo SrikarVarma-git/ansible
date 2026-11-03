@@ -20,3 +20,15 @@
      information: "Hello Srikar"
     ansible.builtin.debug:
      msg: "{{ information | lower }}"
+
+  - name: get the unique values
+    vars:
+     numbers: [3,2,1,1,2,3]
+    ansible.builtin.debug:
+     msg: "{{ numbers | unique }}"
+
+  - name: print min and max numbers
+    vars:
+     numbers: [12,24,36,48,64]
+    ansible.builtin.debug:
+     msg: " Min: {{ numbers | min }}, Max: {{ numbers | max }} "
