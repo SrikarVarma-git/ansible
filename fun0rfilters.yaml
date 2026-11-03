@@ -45,6 +45,6 @@
     vars:
     - {"key": "name", "value": "DevOps with AWS"}
     - {"key": "duration", "value": 120 }
-    - {"key": "trainer", "value": "srikar varma"}
+    - {"key": "trainer", "value": "siva kumar reddy"}
     ansible.builtin.debug:
      msg: "{{ course | items2dict }}"
